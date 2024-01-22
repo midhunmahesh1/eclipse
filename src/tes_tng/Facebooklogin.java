@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Facebooklogin {
 	ChromeDriver driver;
-	String url="https://www.facebook.com";
+	String url="https://www.ebay.com/";
 	@BeforeMethod
 	public void urlload()
 	{
@@ -18,12 +18,11 @@ public class Facebooklogin {
 	}
 	@Parameters({"username","password"})
 	@Test
-	public void logincheck(String username,String password)
+	public void logincheck(String toys)
 	
 	{
-		@FindBy"//*[@name='email']")).sendKeys(username);
-		driver.findElement(By.xpath("//*[@name='pass']")).sendKeys(password);
-		driver.findElement(By.xpath("//*[@name='login']")).click();
+		driver.findElement(By.xpath("//*[@id=\"gh-ac\"]")).sendKeys(toys);
+		driver.findElement(By.xpath("//*[@id=\"gh-btn\"]")).click();
 	}	
 	
 	

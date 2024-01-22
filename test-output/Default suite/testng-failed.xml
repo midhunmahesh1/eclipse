@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tes_tng.Datepicker">
+      <class name="shopclues.Shopcluestest">
         <methods>
+          <include name="test"/>
           <include name="setup"/>
-          <include name="datepicker"/>
         </methods>
-      </class> <!-- tes_tng.Datepicker -->
+      </class> <!-- shopclues.Shopcluestest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

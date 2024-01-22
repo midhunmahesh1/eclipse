@@ -29,7 +29,7 @@ public class Windowshandle {
 			driver.findElement(By.xpath("/html/body/form/table/tbody/tr[5]/td[2]/input")).sendKeys("abc");
 		//System.out.println(s);
 		driver.close();
-			}
+			} 
 			driver.switchTo().window(parentWindow);
 			}
 			
